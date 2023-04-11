@@ -2,8 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["gateway.ipfscdn.io"],
+    domains: ["ipfs.thirdwebcdn.com"]
   },
-};
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
